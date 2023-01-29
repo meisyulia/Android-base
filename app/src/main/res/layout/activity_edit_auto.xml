@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".EditAutoActivity">
+
+    <AutoCompleteTextView
+        android:id="@+id/ac_text"
+        style="@style/text_normal"
+        android:padding="10dp"
+        android:hint="请输入搜索关键词"
+        android:completionHint="相关词语"
+        android:completionThreshold="1"
+        android:dropDownHeight="wrap_content"
+        android:dropDownWidth="match_parent"
+        android:dropDownHorizontalOffset="0dp"
+        android:dropDownVerticalOffset="0dp"
+        android:textColor="#000"
+        android:textSize="17sp"/>
+
+</LinearLayout>

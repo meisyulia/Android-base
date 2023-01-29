@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TabGroupActivity">
+<!--    内容页面挂在在该线性布局下-->
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom|center"
+        android:orientation="horizontal"/>
+
+    <!-- 下面是底部标签栏，采取水平线性布局展示 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tabbar_height"
+        android:orientation="horizontal">
+
+        <!-- 第一个标签控件 -->
+        <LinearLayout
+            android:id="@+id/ll_first"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TabButton"
+                android:drawableTop="@drawable/tab_first_selector"
+                android:text="@string/menu_first" />
+        </LinearLayout>
+
+        <!-- 第二个标签控件 -->
+        <LinearLayout
+            android:id="@+id/ll_second"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TabButton"
+                android:drawableTop="@drawable/tab_second_selector"
+                android:text="@string/menu_second" />
+        </LinearLayout>
+
+        <!-- 第三个标签控件 -->
+        <LinearLayout
+            android:id="@+id/ll_third"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TabButton"
+                android:drawableTop="@drawable/tab_third_selector"
+                android:text="@string/menu_third" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

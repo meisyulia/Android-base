@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CustomCtl</string>
+    <string name="pause_event">com.example.customctl.service.pause</string>
+</resources>

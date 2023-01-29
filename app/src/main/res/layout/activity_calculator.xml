@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".CalculatorActivity">
+<!--最大界面用滚动视图，防止超出-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--标题-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="简单计算器"
+                android:textSize="30sp"
+                android:textColor="#000"
+                android:padding="5dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4a88c7"/>
+            <!--文本框——计算文本，向右下角对齐，总行数为3-->
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|bottom"
+                android:lines="5"
+                android:scrollbars="vertical"
+                android:text="0"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:layout_marginBottom="20dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button style="@style/btn_cal"
+                    android:id="@+id/btn_cancel"
+                    android:text="@string/cancel"/>
+                <Button style="@style/btn_cal"
+                    android:id="@+id/btn_divide"
+                    android:text="@string/divide"/>
+                <Button style="@style/btn_cal"
+                    android:id="@+id/btn_multiply"
+                    android:text="@string/multiply"/>
+                <Button style="@style/btn_cal"
+                    android:id="@+id/btn_clear"
+                    android:text="@string/clear"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button style="@style/btn_cal"
+                    android:id="@+id/btn_seven"
+                    android:text="@string/seven"/>
+                <Button style="@style/btn_cal"
+                    android:id="@+id/btn_eight"
+                    android:text="@string/eight"/>
+                <Button style="@style/btn_cal"
+                    android:id="@+id/btn_nine"
+                    android:text="@string/nine"/>
+                <Button style="@style/btn_cal"
+                    android:id="@+id/btn_plus"
+                    android:text="@string/plus"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button style="@style/btn_cal"
+                    android:id="@+id/btn_four"
+                    android:text="@string/four"/>
+                <Button style="@style/btn_cal"
+                    android:id="@+id/btn_five"
+                    android:text="@string/five"/>
+                <Button style="@style/btn_cal"
+                    android:id="@+id/btn_six"
+                    android:text="@string/six"/>
+                <Button style="@style/btn_cal"
+                    android:id="@+id/btn_minus"
+                    android:text="@string/minus"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button style="@style/btn_cal"
+                    android:id="@+id/btn_one"
+                    android:text="@string/one"/>
+                <Button style="@style/btn_cal"
+                    android:id="@+id/btn_two"
+                    android:text="@string/two"/>
+                <Button style="@style/btn_cal"
+                    android:id="@+id/btn_three"
+                    android:text="@string/three"/>
+                <ImageButton style="@style/btn_cal"
+                    android:id="@+id/ib_sqrt"
+                    android:padding="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/sqrt"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button style="@style/btn_cal"
+                    android:id="@+id/btn_zero"
+                    android:layout_weight="2"
+                    android:text="@string/zero"/>
+                <Button style="@style/btn_cal"
+                    android:id="@+id/btn_dot"
+                    android:text="@string/dot"/>
+                <Button style="@style/btn_cal"
+                    android:id="@+id/btn_equal"
+                    android:text="@string/equal"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

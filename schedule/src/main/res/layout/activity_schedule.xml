@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_schedule"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:background="@drawable/normal_day"
+    tools:context=".activity.ScheduleActivity">
+
+    <TextView
+        android:id="@+id/tv_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.viewpager.widget.PagerTabStrip
+            android:id="@+id/pts_schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>
